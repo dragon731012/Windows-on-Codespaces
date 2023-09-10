@@ -1,4 +1,6 @@
-# WINDOWS 10 ON GITHUB CODESPACES FOR FREE
+# Windows 10 on GitHub Codespaces for free
+
+> Credit to mollomm1 for this, imported from [codeberg](https://codeberg.org/Mollomm1/W10-On-Github-Codespaces/src/branch/main)
 
 * BE SURE TO USE THE 4-CORES MACHINE TYPE
 > https://github.com/codespaces/
@@ -31,10 +33,10 @@ sudo wget -O /root/.aqemu/Tiny_10_x64.aqemu https://files.mollomm1.dev/api/publi
 sudo vncserver -SecurityType None -xstartup "dwm" -rfbport 5900 && sudo /noVNC/utils/novnc_proxy --vnc 127.0.0.1:5900 --listen localhost:6080
 ```
 
-* after opening the novnc client do ALT+P then type **aqemu**
+* After opening the novnc client do ALT+P then type **aqemu**
 * Aqemu will warn you you are root user, just click **No** and ignore.
 * In Find Qemu setup step be sure to click the search button, else it will break.
 
-after setting up aqemu just start the Tiny 10 x64 vm
+After setting up aqemu just start the Tiny 10 x64 vm
 
 Admin password : Admin
