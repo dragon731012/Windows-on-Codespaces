@@ -1,8 +1,7 @@
-# Windows 10 on GitHub Codespaces for free
+# NEW VERSION: https://git.mollomm1.dev/Mollomm1/GamingOnCodespaces
 
-> Credit to mollomm1 for this, imported from [codeberg](https://codeberg.org/Mollomm1/W10-On-Github-Codespaces/src/branch/main)
 
-*a new version with sound support and with multiple os is in progress.*
+## WINDOWS 10 ON GITHUB CODESPACES FOR FREE
 
 ![png](https://media.discordapp.net/attachments/971769909136736268/1150215855922229258/image.png)
 
