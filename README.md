@@ -1,44 +1,47 @@
-# NEW VERSION: https://git.mollomm1.dev/Mollomm1/GamingOnCodespaces
+# DesktopOnCodespaces (Beta)
 
+[**See Screenshots**](https://git.mollomm1.dev/Mollomm1/DesktopOnCodespaces/src/branch/main/screenshots.md)
 
-## WINDOWS 10 ON GITHUB CODESPACES FOR FREE
+> ⚠️ This project is currently a work in progress and is still unfinished. While I'm actively working on it and making progress, there may still be bugs and incomplete features. ⚠️
 
-![png](https://media.discordapp.net/attachments/971769909136736268/1150215855922229258/image.png)
+> it also works on [gitpod](https://gitpod.io/workspaces)
 
-* BE SURE TO USE THE 4-CORES MACHINE TYPE
-> https://github.com/codespaces/
-## Install packages : qemu, dwm, aqemu, tigervnc
-```bash
-sudo apt update
-sudo apt install qemu-kvm virtinst libvirt-clients bridge-utils libvirt-daemon-system tigervnc-standalone-server dwm aqemu -y
+# Supported Stuff
+
+* 1080p 60fps
+
+* Sound
+
+* Windows apps (wine)
+
+* Browsering (Brave and Firefox included!)
+
+* Home Persistance (You keep your files!)
+
+# Roadmap
+
+* Ability To Backup And Restore The Data.
+
+* More Desktop Environments
+
+* Add More Apps
+
+* Write A Documentation
+
+# Use
+
+it's very simple to install, there is a pseudo-graphical installer.
+
+first start a new codespace https://github.com/codespaces/new
+to install just copy and paste this command in your codespace terminal
 ```
-
-## Download novnc
-```bash
-cd /
-sudo git clone https://github.com/novnc/noVNC
+curl -O https://git.mollomm1.dev/Mollomm1/DesktopOnCodespaces/raw/branch/main/install.sh
+chmod +x install.sh
+./install.sh
 ```
-
-## Download Disk image for windows 10
-```bash
-sudo wget -O /tmp/Tiny10_x64_HDA.img https://files.mollomm1.dev/api/public/dl/eHWIyWhJ
+for dev branch (unstable)
 ```
-
-## Download VM config for windows 10
-```bash
-sudo mkdir /root/.aqemu
-sudo wget -O /root/.aqemu/Tiny_10_x64.aqemu https://files.mollomm1.dev/api/public/dl/fCJ-7xlS
+curl -O https://git.mollomm1.dev/Mollomm1/DesktopOnCodespaces/raw/branch/dev/install-dev.sh
+chmod +x install-dev.sh
+./install-dev.sh
 ```
-
-## launch aqemu, vncserver and novnc
-```bash
-sudo vncserver -SecurityType None -xstartup "dwm" -rfbport 5900 && sudo /noVNC/utils/novnc_proxy --vnc 127.0.0.1:5900 --listen localhost:6080
-```
-
-* after opening the novnc client do ALT+P then type **aqemu**
-* Aqemu will warn you you are root user, just click **No** and ignore.
-* In Find Qemu setup step be sure to click the search button, else it will break.
-
-after setting up aqemu just start the Tiny 10 x64 vm
-
-Admin password : Admin
